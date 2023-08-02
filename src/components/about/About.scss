@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300;400;500;600&display=swap');
+@import '../../styles//Responsive.scss';
+
+
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  scroll-behavior: smooth;
+
+  @include sm {
+    flex-direction: column;
+    height: max-content;
+  }
+
+}
+
+.aboutLeft {
+  text-align: center;
+  flex-basis: 50%;
+
+  @include sm {
+    flex-basis: 0;
+  }
+
+}
+
+.aboutLeft img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.aboutRight {
+  flex-basis: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    padding: 30px;
+  }
+
+}
+
+.aboutRight h1 {
+  color: #000000a9;
+  font-size: 50px;
+  margin: 20px 0;
+  font-family: 'Fjalla One', sans-serif;
+
+  @include sm {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+
+}
+
+.aboutRight h3 {
+  color: #ff0000;
+  font-size: 40px;
+
+  @include sm {
+    font-size: 18px;
+  }
+
+
+}
+
+.aboutRight h5 {
+  color: #000000b1;
+  font-size: 24px;
+  position: relative;
+  margin: 20px 0;
+
+  @include sm {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+}
+
+.aboutRight small {
+  color: #000000b1;
+  margin: 20px 0;
+
+  @include sm {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+
+}
+
+
+.aboutRight a {
+  background: transparent;
+  color: #000;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  width: max-content;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+
+  @include sm {
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+}
+
+.aboutRight a:hover {
+  background: #000;
+  color: #fff;
+}

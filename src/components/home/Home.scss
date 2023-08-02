@@ -1,0 +1,56 @@
+@import '../../styles//Responsive.scss';
+
+
+.home {
+  background-image: url("file:///C:/Users/NIRANJAN%20RAJU/OneDrive/Desktop/bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
+
+
+  @include sm {
+    width: 100;
+    height: max-content;
+  }
+
+}
+
+.homeContainer {
+  position: relative;
+  top: 50%;
+  left: 20%;
+  max-width: 450px;
+  padding: 20px;
+
+  @include sm {
+    max-width: 150px;
+    top: 30%;
+  }
+}
+
+
+
+
+.home h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 50px;
+  color: #ffffffac;
+
+  @include sm {
+    font-size: 18px;
+  }
+
+}
+
+.home small {
+  color: #ffffffac;
+  font-size: 8px;
+
+  @include sm {
+    display: inline-block;
+  }
+
+}

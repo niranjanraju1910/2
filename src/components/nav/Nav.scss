@@ -1,0 +1,49 @@
+@import '../../styles//Responsive.scss';
+
+
+nav {
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 2rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(55px);
+  background: rgb(97, 97, 97, 0.1);
+  background: linear-gradient(0deg, rgba(95, 95, 95, 0.8) 0%, rgb(166, 166, 166, 0.1) 100%, rgb(122, 122, 122, 0.1) 100%);
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    left: 85%;
+    padding: 5px;
+    position: fixed;
+    top: 75%;
+    font-size: 12px;
+  }
+
+}
+
+nav a {
+  background: transparent;
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  background: #00000093;
+  color: #fff;
+}
+
+nav a.active {
+  background: #00000093;
+  color: #fff;
+}
